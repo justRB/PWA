@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.sections {
+    display: flex;
+    align-items: self-start;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 25px;
+}
+
+.home-container {
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #1f1f1f;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 350px;
+}
+
+.camera-container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-bottom: 1.5rem;
+}
+
+.camera-container .video-display {
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #333;
+    background-color: black;
+}
+
+.camera-container .button-container {
+    margin-top: 1.5rem;
+}
+
+.camera-container .capture-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.camera-container .capture-button:hover {
+    background-color: #9b66e5;
+    transform: translateY(-3px);
+}
+
+.camera-container .photo-preview img {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.camera-container .error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.geo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 350px;
+}
+
+.geo-container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-bottom: 1.5rem;
+}
+
+.geo-container .error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    background-color: #3c1c1c;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.geo-container .location-card {
+    background-color: #2b2b2b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 1rem;
+}
+
+.geo-container .location-text {
+    font-size: 1.2rem;
+    color: #d0d0d0;
+    margin: 0.5rem 0;
+}
+
+.geo-container .location-text strong {
+    font-weight: bold;
+    color: #bb86fc;
+}
+
+.geo-container .map-container {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+.phone-call-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  width: 350px;
+}
+
+.phone-call-container .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  margin-bottom: 1.5rem;
+}
+
+.phone-call-container .input-container {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.phone-call-container .input-label {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.phone-call-container .phone-input {
+  width: 93%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #f5f5f5;
+  font-size: 1rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.phone-call-container .button-container {
+  margin-top: 1.5rem;
+}
+
+.phone-call-container .call-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #03dac6;
+  color: #121212;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.phone-call-container .call-button:hover {
+  background-color: #01a791;
+  transform: translateY(-3px);
+}
+
+.phone-call-container .error-message {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.battery-status-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 350px;
+  }
+  
+  .battery-status-container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .battery-status-container .battery-info {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .battery-status-container .battery-level {
+    font-size: 1.5rem;
+    color: #bb86fc;
+  }
+  
+  .battery-status-container .charging-status {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+  
+  .battery-status-container .battery-visual {
+    width: 100%;
+    height: 25px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    margin-top: 1rem;
+  }
+  
+  .battery-status-container .battery-bar {
+    height: 100%;
+    background-color: #03dac6;
+    transition: width 0.3s ease;
+  }
+  
+  .battery-status-container .error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .vibration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 350px;
+  }
+  
+  .vibration-container .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f5f5f5;
+    margin-bottom: 1.5rem;
+  }
+  
+  .vibration-container .error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+    background-color: #3c1c1c;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  .vibration-container .vibration-active {
+    color: #03dac6;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    background-color: #2b2b2b;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .vibration-container .button-container {
+    margin-top: 1.5rem;
+  }
+  
+  .vibration-container .vibration-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0.5rem;
+  }
+  
+  .vibration-container .vibration-button:hover {
+    background-color: #9b66e5;
+    transform: translateY(-3px);
+  }
+  
+  .vibration-container .stop-button {
+    background-color: #ff6b6b;
+  }
+  
+  .vibration-container .stop-button:hover {
+    background-color: #e84d4d;
+  }
